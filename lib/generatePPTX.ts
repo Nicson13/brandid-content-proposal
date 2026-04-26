@@ -299,7 +299,7 @@ export async function generatePPTX(data: ProposalData): Promise<void> {
         : (topic.caption || '')
       s.addText(captionText, {
         x: cardX + 0.25, y: cardY + 4.3, w: cardW - 0.5, h: 1.5,
-        fontSize: 11, color: C.ink2 || '4a4a4a', wrap: true, valign: 'top', fontFace: 'Arial',
+        fontSize: 11, color: '4a4a4a', wrap: true, valign: 'top', fontFace: 'Arial',
       })
     })
   }
