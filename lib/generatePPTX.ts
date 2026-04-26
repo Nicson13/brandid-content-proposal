@@ -98,7 +98,7 @@ export async function generatePPTX(data: ProposalData): Promise<void> {
   })
 
   // Right side accent block
-  s1.addShape('rect', { x: 9.5, y: 1.5, w: 3.5, h: 4, fill: { color: C.accent }, transparency: 85 })
+  s1.addShape('rect', { x: 9.5, y: 1.5, w: 3.5, h: 4, fill: { color: C.accent, transparency: 85 } })
 
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   // Slide 2: 项目概览 / Overview
