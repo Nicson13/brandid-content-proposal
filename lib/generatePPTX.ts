@@ -286,7 +286,7 @@ export async function generatePPTX(data: ProposalData): Promise<void> {
       s.addShape('rect', { x: cardX + 0.25, y: cardY + 3.05, w: cardW - 0.5, h: 0.8, fill: { color: C.accentLight } })
       s.addText(topic.hook || '', {
         x: cardX + 0.4, y: cardY + 3.05, w: cardW - 0.7, h: 0.8,
-        fontSize: 12, color: C.accent, wrap: true, valign: 'middle', italics: true, fontFace: 'Arial',
+        fontSize: 12, color: C.accent, wrap: true, valign: 'middle', italic: true, fontFace: 'Arial',
       })
 
       // Caption preview
