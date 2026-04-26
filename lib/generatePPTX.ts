@@ -180,7 +180,7 @@ export async function generatePPTX(data: ProposalData): Promise<void> {
     const y = 3.4 + i * 0.7
     const barW = (r.val / 100) * 5.5
     s3.addText(r.label, { x: 0.5, y, w: 1.8, h: 0.5, fontSize: 12, color: C.ink, fontFace: 'Arial' })
-    s3.addShape('rect', { x: 2.4, y: y + 0.1, w: 5.5, h: 0.28, fill: { color: C.paper3 || 'E8E4DC' } })
+    s3.addShape('rect', { x: 2.4, y: y + 0.1, w: 5.5, h: 0.28, fill: { color: 'E8E4DC' } })
     s3.addShape('rect', { x: 2.4, y: y + 0.1, w: Math.max(barW, 0.1), h: 0.28, fill: { color: barColors[i] } })
     s3.addText(`${r.val}%`, { x: 8.2, y, w: 0.8, h: 0.5, fontSize: 12, bold: true, color: barColors[i], fontFace: 'Arial' })
   })
